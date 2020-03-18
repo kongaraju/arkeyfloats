@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>HTML5:manage the web!</title>
+		<meta name="description" content="This tutorial just gives you getting started with HTML5. What are ,How are, How to">
+		<meta name="viewport" content="width=device-width">
+
+		
+<link rel="icon" type="image/png" href="favicon.png">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/animate-custom.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+		<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div class="container">
+			<section class="slide1 slide">
+				<div class="inner">
+					<img alt="html5 logo" src="img/HTML5-logo.png" />
+					<h1>HTML5: manage the web!</h1>
+					<h2>Its all about what's new in HTML5</h2>
+					
+				</div>
+			</section>
+			<section class="slide2 slide">
+				<div class="inner">
+					<h1>Agenda</h1>
+					<ul>
+						<li>Content Management</li>
+						<li>Performance Management</li>
+						<li>Storage Management</li>
+						<li>Status Management</li>
+						<li>Media Management</li>
+						<li>Art Management</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section class="slide3 slide tslide">
+				<div class="inner">
+					<h1>Content Management</h1>	
+				</div>
+			</section>
+			
+			
+			<section class="slide4 slide">
+				<div class="inner">
+					<h1>Content Management</h1>
+					<ul>
+						<li>Semantics</li>
+						<li>ContentEditable</li>
+						<li>download</li>
+						<li>Drag & Drop</li>
+						<li>Selectors</li>
+						<li>Shadow DOM</li>
+					</ul>
+						
+				</div>
+			</section>
+			<section class="slide5 slide">
+				<div class="inner">
+					<h1>Semantics: Say Hello to your document structure</h1>
+					<div class="code">
+						<pre>
+<span class="tag">&lt;section&gt;,&lt;article&gt;,&lt;nav&gt;,&lt;header&gt;,&lt;footer&gt;,&lt;aside&gt;,&lt;hgroup&gt;</span></pre>
+					</div>
+					<div class="desc">
+						<ul><li>HTML5 gives you more semantic way organise the structure of document. </li><li>Most of the semantics describe the parts of document.</li><li> Now you can easily build complex layouts with these elements.</li></ul>
+					</div>
+					<div class="further">
+						<a class="sourcebtn" target="_blank" href="http://coding.smashingmagazine.com/2011/11/18/html5-semantics/">Go through</a>
+					</div>
+				</div>
+			</section>
+			<section class="slide6 slide">
+				<div class="inner">
+					<h1>contenteditable: Edit me</h1>
+					<div class="code">
+						<pre>
+<span class="tag">&lt;div</span> <span class="atr">contenteditable</span><span class="cnt">=</span><span class="str">"true"</span><span class="tag"> &gt;</span>
+		<span class="cnt">HTML5 Hello, World!</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+					</div>
+					<div class="desc" >
+						<ul><li>Which makes the content editable in the section </li> <li> It provide WYSIWYG experience and rich text editing.</li></ul>
+					</div>
+					<div class="further">
+						<a class="sourcebtn" target="_blank" href="http://html5doctor.com/the-contenteditable-attribute/">Go through</a>
+					</div>
+				</div>
+			</section>
+			<section class="slide7 slide">
+				<div class="inner">
+					<h1>below section is editable</h1>
+					
+					<div class="desc" contenteditable="true">
+						
+						HTML5 introduces many cutting-edge features that enable developers to create apps and websites with the functionality, speed, performance, and experience of desktop applications. But unlike desktop applications, apps built on the web platform can reach a much broader audience using a wider array of devices. HTML5 accelerates the pace of your innovation and enables you to seamlessly roll out your latest work to all your users simultaneously.
+						
+						</div>
+					
+				</div>
+			</section>
+			
+			<section class="slide8 slide">
+				<div class="inner">
+					<h1>download attribute: Get it simply!</h1>
+					<div class="code">
+						<pre>
+<span class="tag">&lt;a</span> <span class="atr">href</span><span class="cnt">=</span><span class="str">"/file.pdf"</span> <span class="atr">download</span><span class="cnt">=</span><span class="str">"helloworld</span><span class="tag">"&gt;</span><span class="cnt"Download Me</span><span class="tag">&lt;/a&gt;</span>
+						</pre>
+					</div>
+					<div class="desc">
+						<ul><li>download attribute specifies the hyperlink to be used for downloading resources.</li><li>It is very helpful in case of downloading generated files.</li></ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://html5-demos.appspot.com/static/a.download.html">demo</a><a class="sourcebtn" target="_blank" href="http://updates.html5rocks.com/2011/08/Downloading-resources-in-HTML5-a-download">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			<section class="slide9 slide">
+				<div class="inner">
+					<h1>Drag & Drop: Move now</h1>
+					<div class="code">						
+<pre><span class="tag">&lt;div</span> <span class="atr">id</span><span class"cnt">=</span><span class='str'>"div1"</span> <span class="atr">ondrop</span><span class="cnt">=</span><span class="str">"drop(event)"</span> <span class="atr">ondragover</span><span class="cnt">=</span><span class="str">"allowDrop(event)"</span><span class="tag">&gt;&lt;/div&gt;</span>
+<span class="tag">&lt;img</span> <span class="atr">id</span>=<span class="str">"drag1"</span> <span class="atr">src</span>=<span class='str'>"img.jpg"</span> <span class="atr">draggable</span>=<span class="str">"true"</span><span class="atr">ondragstart</span>=<span class="str">"drag(event)"</span> <span class="tag">&gt;</span></pre>
+					</div>
+<div class="code">						
+<pre><span class="tag">function</span> <span class="atr">drop</span>(e){
+	<span class="cnt">//e.target is element and e.dataTransfer.getData() will return data</span>
+	<span class="atr">return</span> <span class="tag">false</span>;
+}</pre></div>
+					<div class="desc">
+						<ul><li>draggable makes objects draggable and handle data on drop action.</li><li> Native way of drop and drop is more faster and It is ver useful to build more responsive web apps.</li></ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://html5demos.com/drag">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/dnd/basics/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			<section class="slide10 slide">
+				<div class="inner">
+					<h1>Selectors API: you can catch me!</h1>
+					<div class="code">
+						<pre>
+<span class="tag">var</span> els = <span class="tag">document</span>.getElementsByClassName(<span class="str">'finder'</span>);
+ <span class="cnt">// Finding elements with CSS syntax (Selectors API)</span>
+els = <span class="tag">document</span>.querySelectorAll(<span class="str">"p span:nth-child(odd)"</span>);
+						</pre>
+					</div>
+					<div class="desc">
+						<ul><li>Selector API accepts css selectors.</li><li>This API takes the complicated process of selecting elements from the DOM and unifies it under a simple unified interface.</li>
+							<li>It provides two methods querySelector and querySelectorAll.</li></ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://playground.html5rocks.com/#selectors_api">demo</a><a class="sourcebtn" target="_blank" href="https://hacks.mozilla.org/2009/06/dom-selectors-api/">Go through</a>
+					</div>
+				</div>
+			</section>
+			<section class="slide11 slide">
+				<div class="inner">
+					<h1>Shadow DOM: building reusable widgets.</h1>
+					<div class="code">
+						<pre>
+<span class="tag">&lt;div&gt;</span>This is a brick in HTML5 <span class="tag">&lt;/div&gt;</span></pre>
+					</div>
+
+<div class="code">
+<pre><span class="tag">var</span> host = <span class="tag">document</span>.querySelector(<span class="str">'div'</span>);
+<span class="tag">var</span> root = host.webkitCreateShadowRoot();
+root.textContent = <span class="str">'HTML5 Hello, World!'</span>;</pre>
+					</div>
+					<div class="desc">
+						<ul><li>Shadow DOM adds new node to the element called shadow root.</li>
+							<li>Shadow root will render instead of shadow host.</li>
+							<li>Seperates content from presentation for serving needs.</li></ul>
+						</ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/">Go through</a>
+					</div>
+				</div>
+			</section>
+			<section class="slide12 slide">
+				<div class="inner">
+					<h1>Shadow DOM: style the shadows</h1>
+					<div class="code">
+						<pre>
+<span class="tag">&lt;div&gt;</span>Just reached the edge. <span class="tag">&lt;/div&gt;</span></pre>
+					</div>
+
+<div class="code">
+<pre><span class="tag">var</span> host = <span class="tag">document</span>.querySelector(<span class="str">'div'</span>);
+<span class="tag">var</span> root = host.webkitCreateShadowRoot();
+root.textContent = <span class="str">'&lt;span&gt;HTML5 Hello, World!&lt;/span&gt;'</span>+
+		<span class="str">'&lt;style&gt;span{color:orange}&lt;/span&gt;'</span>;
+</pre>
+					</div>
+					<div class="desc">
+						<ul><li>Shadow DOM styles are bound to ShadowRoot.</li>
+							<li>use @host to style the ShasowHost.</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="further">
+						<a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/">Go through</a>
+					</div>
+				</div>
+			</section>
+			<section class="slide13 slide">
+				<div class="inner">
+					<h1>Shadow DOM:multiple shadows</h1>
+					<div class="code">
+						<pre>
+<span class="tag">&lt;div&gt;</span>This is very advanced <span class="tag">&lt;/div&gt;</span></pre>
+					</div>
+
+<div class="code">
+<pre><span class="tag">var</span> host = <span class="tag">document</span>.querySelector(<span class="str">'div'</span>);
+<span class="tag">var</span> root1 = host.webkitCreateShadowRoot();
+root.textContent = <span class="str">'HTML5 Hello, World! 1'</span>;
+<span class="tag">var</span> root2 = host.webkitCreateShadowRoot();
+root2.textContent = <span class="str">'HTML5 Hello, World! 2'</span>;
+</pre>
+					</div>
+					<div class="desc">
+						<ul><li>Web apps can do encapsulation without iFrame.</li>
+							<li>Host maintain stack of shadow trees and renders recent node.</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://html5-demos.appspot.com/static/shadowdom-visualizer/index.html">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			
+			
+			
+			<section class="slide14 slide tslide">
+				<div class="inner">
+					<h1>Performance Management</h1>	
+				</div>
+			</section>
+			
+			
+			<section class="slide15 slide">
+				<div class="inner">
+					<h1>Performance Management</h1>
+					<ul>
+						<li>Web Sockets</li>
+						<li>Web workers</li>
+						<li>requestAnimationFrame</li>
+						<li>XMLHttpRequest Level 2</li>
+					</li>
+				</div>
+			</section>
+			
+			
+			
+			<section class="slide16 slide">
+				<div class="inner">
+					<h1>WebSocket API: real time communication</h1>
+					<div class="code">
+						<pre>
+<span class="tag">var</span> connection = <span class="tag">new</span> <span class="atr">WebSocket</span>(<span class="str">"URL"</span>);
+connection.binaryType = <span class="str">'arraybuffer'</span>;
+connection.onopen=<span class="tag">function</span>(e)...
+connection.onerror=<span class="tag">function</span>(e)...
+connection.onclose=<span class="tag">function</span>(e)...
+connection.onmessage=<span class="tag">function</span>(e){
+	console.log(e.data)<span class="cnt">//data from server</span>
+}
+connection.send(<span class="str">"ping"</span>);</pre>
+					</div>
+					<div class="desc">
+						<ul><li>Websockets is a bidirectional communication for web,redude bandwidth.</li><li>It maintains persistent connection with client, sends only data without HTTP headers. </li></ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://html5demos.com/web-socket">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/websockets/basics/">Go through</a>
+					</div>
+				</div>
+			</section>
+			<section class="slide17 slide">
+				<div class="inner">
+					<h1>webWorker API:background processing with js</h1>
+					<div class="code">
+						<pre>
+<span class="tag">var</span> worker = <span class="tag">new</span> Worker(<span class="str">"worker.js"</span>);	
+worker.onerror=errorCallback;
+worker.onmessage=<span class="tag">function</span>(e){
+	console.log(e.data)<span class="cnt">//data from worker</span>
+}
+worker.postMessage(<span class="str">"start"</span>);
+</pre>
+</div>
+
+worker.js
+<div class="code">
+<pre>onmessage=<span class="tag">function</span>(e){
+	<span class="tag">var</span> data=e.data;<span class="cnt">//data from main thread</span>
+	postMessage(data);<span class="cnt">//send data to main</span>
+}</pre>
+					</div>
+					<div class="desc">
+						<ul><li>webworkers are the scripts, run in backgorund.</li><li>MessagePassing is used to communicate and Transferrable objects is to pass complex types.</li></ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://html5demos.com/worker">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/workers/basics/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			<section class="slide18 slide">
+				<div class="inner">
+					<h1>requestAnimationFrame:styling changes</h1>
+					<div class="code">
+						<pre>
+<span class="tag">function</span> moveElem() {
+    requestAnimFrame( moveElem );
+    render();
+}
+
+<span class="tag">function</span> render(){
+	<span class="cnt">// DOM changes</span>
+}</pre>
+					</div>
+					<div class="desc">
+						<ul>
+						<li>rAF gives performance on making changes with few milliseconds intervals.</li>
+						<li>rAF optimize the refresh rate.</li></ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://jsfiddle.net/XQpzU/4358/light/">demo</a><a class="sourcebtn" target="_blank" href="http://paulirish.com/2011/requestanimationframe-for-smart-animating/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section class="slide19 slide">
+				<div class="inner">
+					<h1>XMLHttpRequests Level 2</h1>
+					<div class="code">
+						<pre>
+  <span class="tag">var</span> xhr = <span class="tag">new</span> <span class="atr">XMLHttpRequest</span>();
+  xhr.open(<span class="str">'POST'</span>, <span class="str">'/server'</span>, <span class="atr">true</span>);
+  xhr.responseType = <span class="str">'text'</span>;
+  xhr.onload = <span class="tag">function</span>(e) {
+    <span class="tag">if</span> (this.status == 200) {
+      console.log(this.response);
+    }
+  };
+  xhr.send(<span class="str">"some text"</span>);</pre>
+					</div>
+					<div class="desc">
+						<ul><li>isn't HTML5 but it got dramatic changes and became faster.</li>
+							<li>It supports binary data Transfers and cross origin requests.</li>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/file/xhr2/#toc-example-savingimages">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/file/xhr2/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section class="slide20 slide tslide">
+				<div class="inner">
+					<h1>Storage Management</h1>	
+				</div>
+			</section>
+			
+			
+			<section class="slide21 slide">
+				<div class="inner">
+					<h1>Storage</h1>
+					<ul>
+						<li>IndexedDB</li>
+						<li>File</li>
+						<li>File System</li>
+						<li>DOM Storage</li>
+					</ul>
+						
+				</div>
+			</section>
+			
+			<section class="slide22 slide">
+				<div class="inner">
+					<h1>IndexedDB: Store prefernces</h1>
+					<div class="code">
+						<pre><span class="atr">indexedDB</span>.db = <span class="tag">null</span>;
+<span class="atr">indexedDB</span>.onerror = <span class="tag">function</span>(e) {
+  console.log(e);
+};
+<span class="atr">indexedDB</span>.open = <span class="tag">function</span>() {
+  <span class="tag">var</span> request = <span class="atr">indexedDB</span>.open(<span class="str">"todos"</span>);
+  request.onsuccess=successCallback;
+  request.onfailure=failureCallback;
+ }</pre>
+					</div>
+					<div class="desc">
+						<ul><li>IndexedDB provides faster and easy way to store data.</li>
+							<li>It is an object store with versioning.</li>
+							<li>Retrieve data by key or query.</li></ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/indexeddb/todo/">Go through</a>
+					</div>
+				</div>
+			</section>
+			<section class="slide23 slide">
+				<div class="inner">
+					<h1>File API: Read files locally.</h1>
+					<div class="code">
+						<pre> <span class="tag">&lt;input</span> <span class="atr">type</span>=<span class="str">"file"</span> <span class="atr">id</span>=<span class="str">"files"</span> <span class="tag">/&gt;</span></pre>
+					</div>
+							
+							
+							<div class="code">
+						
+<pre><span class="tag">function</span> selectedFiles(evt) {
+    <span class="tag">var</span> files = evt.target.files; // selected list of files  
+    <span class="tag">for</span> (<span class="tag">var</span> i = 0, f; f = files[i]; i++) {
+    	console.log(escape(f.name)+<span class="astr">" "</span>+f.type+<span class="str">" "</span>+f.size+<span class="str">" "</span>+f.lastModifiedDate);
+    } 
+  }
+<span class="tag">document</span>.getElementById(<span class="str">"files"</span>).addEventListener(<span class="str">"change"</span>,selectedFiles,<span class="atr">false</span>);</pre>
+					</div>
+					<div class="desc">
+						<ul><li>File API gives standard mehtod to access files.</li><li>Read the files and create URLs using File API.</li> <li>FileReader, FileWriter, slice are the mehtods to get into files</li></ul>. 
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://html5demos.com/file-api">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/file/dndfiles/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			
+			
+			<section class="slide24 slide">
+				<div class="inner">
+					<h1>FileSystem API: Access your Files</h1>
+					<div class="code">
+						<pre>
+<span class="tag">&lt;input</span> <span class="atr">type</span>=<span class="str">"file"</span> <span class="atr">id</span>=<span class="str">"files"</span> <span class="atr">multiple</span> <span class="tag">/&gt;</span>
+</pre>
+					</div>
+<div class="code">
+						<pre>
+  <span class="tag">document</span>.querySelector(<span class="str">'#files'</span>).onchange = <span class="tag">function</span>(e) {
+  <span class="tag">var</span> files = this.files;
+  <span class="tag">window</span>.requestFileSystem(<span class="tag">window</span>.TEMPORARY, <span class="atr">1024*1024</span>, <span class="tag">function</span>(fs) {
+    <span class="tag">for</span> (<span class="tag">var</span> i = 0, file; file = files[i]; ++i) {
+      (<span class="tag">function</span>(f) {
+        fs.root.getFile(f.name, {create: <span class="atr">true</span>, exclusive: <span class="atr">true</span>}, <span class="tag">function</span>(fileEntry) {
+          fileEntry.createWriter(<span class="tag">function</span>(fileWriter) {
+            fileWriter.write(f); 
+          }, errorHandler);
+        }, errorHandler);
+      })(file);
+    }}, errorHandler);
+};</pre>
+					</div>
+					
+					
+				</div>
+			</section>
+			
+			
+			<section class="slide25 slide">
+				<div class="inner">
+					<h1>FileSystem API</h1>
+					
+					<div class="desc">
+						<ul><li>The web applications can create own sandboxed users local file system.</li>
+							<li>Files and Folders can be create,read,navigate and write.</li>
+							<li>web app require requestquota to use filesystem.</li>
+							<li>Web apps can copy,move,rename the files and folders.</li>
+						</ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://html5-demos.appspot.com/static/filesystem/filer.js/demos/index.html">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/file/filesystem/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section class="slide26 slide">
+				<div class="inner">
+					<h1>data-* : DOM Storage</h1>
+					<div class="code">
+						<pre>
+<span class="tag">&lt;div</span> <span class="atr">data-left</span>=<span class="str">"1500"</span> <span class="atr">id</span>=<span class="str">"domdata"</span> <span class="tag">&gt;</span>Some data...<span class="tag">&lt;/div&gt;</span>
+</pre>
+					</div>
+<div class="code">
+						<pre>
+<span class="cnt">//get data</span>
+<span class="tag">var</span> el = <span class="tag">document</span>.getElementById(<span class="str">'domdata'</span>);
+<span class="tag">var</span> left = el.getAttribute(<span class="str">'data-left'</span>);
+console.log(left);</pre>
+					</div>
+					<div class="desc">
+						<ul><li>data-* attributes are to store custom data in applications.</li>
+						</ul>
+					</div>
+					<div class="further">
+						<a class="sourcebtn" target="_blank" href="http://html5doctor.com/html5-custom-data-attributes/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			<section class="slide27 slide tslide">
+				<div class="inner">
+					<h1>Status Management</h1>	
+				</div>
+			</section>
+			
+			
+			<section class="slide28 slide">
+				<div class="inner">
+					<h1>Status</h1>
+					<ul>
+						<li>Online and Offline</li>
+						<li>Performance</li>
+						<li>Focus</li>
+						<li>PointerLock</li>
+						<li>Full Screen</li>
+						<li>Geo</li>					
+						<li>History</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section class="slide29 slide">
+				<div class="inner">
+					<h1>onLine: Are you alive?</h1>
+					<div class="code">
+						<pre>
+<span class="tag">if</span>(<span class="atr">navigator</span>.onLine){ <span class="cnt">//test the network conection</span>
+	console.log(<span class="str">"Connected."</span>);
+}<span class="tag">else</span>{
+	console.log(<span class="str">"not Connected."</span>);
+}</pre>
+					</div>
+					<div class="desc">
+						Get the status of the network connection.
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://html5-demos.appspot.com/static/navigator.onLine.html">demo</a><a class="sourcebtn" target="_blank" href="http://updates.html5rocks.com/2011/06/navigator-onLine-in-Chrome-Dev-channel-1">Go through</a>
+					</div>
+				</div>
+			</section>
+			<section class="slide30 slide">
+				<div class="inner">
+					<h1>window.performance: Performance Statistics</h1>
+					<div class="code">
+						<pre>
+console.log(<span class="atr">performance</span>);
+
+<span class="cnt">//navigation timing</span>
+connectEnd: 1363679948438
+connectStart: 1363679948438
+domComplete: 1363679955254
+domContentLoadedEventEnd: 1363679950350
+domContentLoadedEventStart: 1363679950308
+domInteractive: 1363679950237
+...</pre>
+					</div>
+					<div class="desc">
+						<ul><li>Measure performace  using navigation timing.</li><li>Open console and type performance for more</li></ul>
+					</div>
+					<div class="further">
+						<a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/webperformance/basics/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section class="slide31 slide">
+				<div class="inner">
+					<h1>PageVisibility API: Is it clear?</h1>
+					<div class="code">
+						<pre>
+<span class="tag">function</span> manageFocus() {
+    <span class="tag">if</span> (<span class="tag">document</span>.hidden) {
+        stopAnimation(); 
+    } <span class="tag">else</span>  {
+       startAnimation();
+    }
+}
+<span class="tag">document</span>.addEventListener(<span class="str">"visibilitychange"</span>, manageFocus, <span class="atr">false</span>);
+						</pre>
+					</div>
+					<div class="desc">
+						Change the state of document when blur and focus.
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://www.samdutton.com/pageVisibility/">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/pagevisibility/intro/">Go through</a>
+					</div>
+				</div>
+			</section>
+			<section class="slide32 slide">
+				<div class="inner">
+					<h1>PointerLock API: Catch mouse!</h1>
+					<div class="code">
+						<pre>
+element.webkitRequestPointerLock(); <span class="cnt">// Chrome</span>
+
+element.mozRequestPointerLock() <span class="cnt">//FF</span>
+						</pre>
+					</div>
+					<div class="desc">
+						<ul><li>PointerLock API gives access to mouse data</li>
+							<li>Focus all events to an element</li></ul>
+					</div>
+					<div class="further">
+						<a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/pointerlock/intro/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			<section class="slide33 slide">
+				<div class="inner">
+					<h1>FullScreen API: I am Big</h1>
+					<div class="code">
+						<pre>
+<span class="tag">function</span> toggleFullScreen(el) {
+  <span class="tag">if</span> (!el.fullscreenElement) {  
+    <span class="tag">if</span> (el.requestFullscreen) {
+      el.requestFullscreen();
+    } 
+  } <span class="tag">else</span> {
+    <span class="tag">if</span> (el.cancelFullScreen) {
+      el.cancelFullScreen();
+    } 
+  }
+}</pre>
+					</div>
+					<div class="desc">
+						FullScreen API allows to show any elements content in Fullscreen mode.
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://html5-demos.appspot.com/static/fullscreen.html">demo</a><a class="sourcebtn" target="_blank" href="http://updates.html5rocks.com/2011/10/Let-Your-Content-Do-the-Talking-Fullscreen-API">Go through</a>
+					</div>
+				</div>
+			</section>
+			<section class="slide34 slide">
+				<div class="inner">
+					<h1>Geo Location: where are you?</h1>
+					<div class="code">
+						<pre>
+<span class="tag">if</span> (<span class="atr">navigator</span>.geolocation) {
+  <span class="atr">navigator</span>.geolocation.getCurrentPosition(success, error);
+  <span class="cnt">//returns longitude and latitude points of current location on success.</span>
+} <span class="tag">else</span> {
+  error(<span class="str">'not supported'</span>);
+}</pre>
+					</div>
+					<div class="desc">
+						Detect the location using geo loaction API.
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://html5demos.com/geo">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/geolocation/trip_meter/">Go through</a>
+					</div>
+				</div>
+			</section>
+			<section class="slide35 slide">
+				<div class="inner">
+					<h1>History API: not just read, create it.</h1>
+					<div class="code">
+						<pre>
+<span class="atr">navigator</span>.pushState({ foo : <span class="str">"bar"</span>}, <span class="str">"New title"</span>, <span class="str">"new-url.html"</span>);
+<span class="tag">window</span>.addEventListener(<span class="str">'popstate'</span>, <span class="tag">function</span>(event) {
+	console.log(event.state);<span class="cnt">//get the data</span>
+}</pre>
+					</div>
+					<div class="desc">
+						This API mainly useful for single page applications. The web apps can push history,replace and navigate.
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://html5demos.com/history">demo</a><a class="sourcebtn" target="_blank" href="http://html5doctor.com/history-api/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section class="slide36 slide tslide">
+				<div class="inner">
+					<h1>Media Management</h1>	
+				</div>
+			</section>
+			
+			<section class="slide37 slide">
+				<div class="inner">
+					<h1>Media Management</h1>
+					<ul>
+						<li>Audio and Video </li>
+						<li>WebRTC</li>	
+						<li>Web Audio</li>
+						<li>Web Speech</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section class="slide38 slide">
+				<div class="inner">
+					<h1>Audio & Video: look and listen</h1>
+					<div class="code">
+						<pre>
+<span class="tag">&lt;video</span> <span class="atr">src</span>=<span class="str">"video.ogg"</span> <span class="atr">controls</span><span class="tag">&gt;</span>
+<span class="cnt">Your browser does not support the video element.</span>
+<span class="tag">&lt;/video&gt;</span>
+<span class="tag">&lt;audio</span> <span class="atr">src</span>=<span class="str">"/test/audio.ogg"</span><span class="tag">&gt;</span>
+<span class="cnt">Your browser does not support the audio element.</span>
+<span class="tag">&lt;/audio&gt;</span>						</pre>
+					</div>
+					<div class="desc">
+						Audio and Video elements for playing media files on web.
+					</div>
+					
+				</div>
+			</section>
+
+			<section class="slide39 slide">
+				<div class="inner">
+					<h1>WebRTC: Plugin free communication</h1>
+					<div class="code">
+						<pre>
+   <span class="atr">navigator</span>.getUserMedia ({video: <span class="atr">true</span>,audio: <span class="atr">true</span>},
+   <span class="tag">function</span>(localMediaStream) {
+      <span class="tag">var</span> video = <span class="tag">document</span>.querySelector(<span class="str">'video'</span>);
+      video.src = <span class="tag">window</span>.URL.createObjectURL(localMediaStream);
+      video.onloadedmetadata = <span class="tag">function</span>(e) {
+         <span class="cnt">// Do something with the video here.</span>
+      };
+   },
+   <span class="tag">function</span>(err) {
+    console.log(<span class="str">"The following error occured: "</span> + err);
+   });</pre>
+					</div>
+					<div class="desc">
+						<ul><li>WebRTC implements 3 APIs, MediaStream,RTCPeerConnection,RTCDataChannel.</li> 
+						<li>WebRTC needs several things like audio,video,signaling,streaming and exchange of information.</li></ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://apprtc.appspot.com/">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/webrtc/basics/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section class="slide40 slide">
+				<div class="inner">
+					<h1>DataChannel: peer-to-peer communication</h1>
+					<div class="code">
+<pre><span class="tag">var</span> sndr = pc1.createDataChannel(<span class="str">"crispy"</span>);  
+<span class="tag">var</span> rcvr = pc2.createDataChannel(<span class="str">"crispy"</span>);  
+
+<span class="tag">var</span> receiveLog = <span class="tag">document</span>.querySelector(<span class="str">"div#receive"</span>);
+rcvr.onmessage = <span class="tag">function</span>(event) {
+  receiveLog.innerHTML += event.data;
+};
+<span class="tag">var</span> input = <span class="tag">document</span>.querySelector(<span class="str">"input#send"</span>);
+<span class="tag">function</span> sendToPeer() {
+  sndr.send(input.value);<span class="cnt">//send message</span> 
+}
+  </pre>
+					</div>
+					<div class="desc">
+						<ul><li>RTCDataChannel will establish peer-to-peer communication.</li> 
+						</ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://apprtc.appspot.com/">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/webrtc/basics/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section class="slide41 slide">
+				<div class="inner">
+					<h1>Web Audio API: Sound Engineer</h1>
+					<div class="code">
+						<pre>
+<span class="tag">var</span> context = <span class="tag">new</span> webkitAudioContext();
+
+<span class="tag">function</span> playSound(buffer) {
+  <span class="tag">var</span> source = context.createBufferSource(); <span class="cnt">// creates a sound source</span>
+  source.buffer = buffer;                    <span class="cnt">// tell the source which sound to play</span>
+  source.connect(context.destination);       <span class="cnt">// connect the source to the context's destination</span>
+  source.noteOn(0);                          <span class="cnt">// play the source now</span>
+}</pre>
+					</div>
+					<div class="desc">
+						Web Audio API is for precessing and synthesizing audio in Web apps.
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://webaudiodemos.appspot.com/pitchdetect/index.html">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/webaudio/intro/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section class="slide42 slide">
+				<div class="inner">
+					<h1>Web Speech API: Lets talk with app</h1>
+					<div class="code">
+						<pre>
+<span class="tag">var</span> recognition = <span class="tag">new</span> webkitSpeechRecognition();
+recognition.onstart=<span class="tag">function</span>(e)...
+recognition.onend=<span class="tag">function</span>(e)...
+recognition.onerror=<span class="tag">function</span>(e)...
+recognition.onresult=<span class="tag">function</span>(e)...	
+recognition.start();</pre>
+					</div>
+					<div class="desc">
+						Web Speech API enables users to talk with apps.
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="https://www.google.com/intl/en/chrome/demos/speech.html">demo</a><a class="sourcebtn" target="_blank" href="http://updates.html5rocks.com/2013/01/Voice-Driven-Web-Apps-Introduction-to-the-Web-Speech-API">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			
+		<section class="slide43 slide tslide">
+				<div class="inner">
+					<h1>Art Management</h1>	
+				</div>
+			</section>	
+			
+			<section class="slide44 slide">
+				<div class="inner">
+					<h1>Art Management</h1>
+					<ul>
+						<li>Canvas</li>
+						<li>SVG</li>
+						<li>WebGL</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section class="slide45 slide">
+				<div class="inner">
+					<h1>Canvas: Draw it on fly</h1>
+					<div class="code">
+						<pre>
+<span class="tag">&lt;canvas</span> <span class="atr">id</span>=<span class="str">"canvasid"</span> <span class="atr">width</span>=<span class="str">"150"</span> <span class="atr">height</span>=<span class="str">"150"</span><span class="tag">&gt;&lt;/canvas&gt;</span>
+						
+<span class="tag">var</span> canvas = <span class="tag">document</span>.getElementById(<span class="str">'canvasid'</span>);
+<span class="tag">var</span> ctx = canvas.getContext(<span class="str">'2d'</span>);</pre>
+					</div>
+					<div class="desc">
+						<ul><li>canvas is used to draw graphics, on the fly, via scripting.</li>
+						<li>canvas can create,edit,open and export images.</li></ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://html5demos.com/canvas">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/canvas/integrating/">Go through</a>
+					</div>
+				</div>
+			</section>
+			
+			
+			
+			<section class="slide46 slide">
+				<div class="inner">
+					<h1>SVG: Scale the Art</h1>
+					<div class="code">
+						<pre>
+<span class="tag">&lt;svg</span> <span class="atr">id</span>=<span class="str">"svgelem"</span> <span class="atr">height</span>=<span class="str">"200"</span> <span class="atr">xmlns</span>=<span class="str">"http://www.w3.org/2000/svg"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;circle</span> <span class="atr">id</span>=<span class="str">"redcircle"</span> <span class="atr">cx</span>=<span class="str">"50"</span> <span class="atr">cy</span>=<span class="str">"50"<span> <span class="atr">r</span>=<span class="str">"50"</span> <span class="atr">fill</span>=<span class="str">"red"</span. <span class="tag">/&gt;</span>
+<span class="tag">&lt;/svg&gt;</span>
+						
+						</pre>
+					</div>
+					<div class="desc">
+						<ul><li>SVG is a way to present vector based line drawings.</li>
+							<li>SVG creates dynamic and interactive graphics.</li></ul>
+					</div>
+					<div class="further">
+						<a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/svg/mobile_fundamentals/">Go through</a>
+					</div>
+				</div>
+			</section>
+			<section class="slide47 slide">
+				<div class="inner">
+					<h1>Webgl: Visualize imaginations</h1>
+					<div class="code">
+						<pre>
+<span class="tag">var</span> canvas = <span class="tag">document</span>.getElementById(<span class="str">"canvas"</span>);
+<span class="tag">try</span>{
+<span class="tag">var</span> gl = canvas.getContext(<span class="str">"experimental-webgl"</span>);
+}
+<span class="tag">catch</span>(e){}					
+<span class="tag">if</span>(!gl){
+	console.log(<span class="str">"Your browser doesn't support webgl"</span>);
+}					</pre>
+					</div>
+					<div class="desc">
+						<ul><li>WEBGL makes realtime 3D graphics and 2d graphics in browser.</li>
+							<li>WebGL allows GPU accelerated usage of physics and image processing and effects.</li>
+						</ul>
+					</div>
+					<div class="further">
+						<a class="demobtn" target="_blank" href="http://updates.html5rocks.com/2011/11/WebGL-demo-roundup">demo</a><a class="sourcebtn" target="_blank" href="http://www.html5rocks.com/en/tutorials/webgl/webgl_fundamentals/">Go through</a>
+					</div>
+				</div>
+			</section>
+			<section class="slide48 slide">
+				<div class="inner">
+					<h1>Resources</h1>
+					<ul><li><a href="html5rocks.com" target="_blank">html5rocks.com</a></li>
+						<li><a href="html5doctor.com" target="_blank">html5doctor.com</a></li>
+						<li><a href="developer.mozilla.org" target="_blank">developer.mozilla.org</a></li>
+						<li><a href="html5demos.com" target="_blank">html5demos.com</a></li>
+				</div>
+			</section>
+			<section class="slide49 slide">
+				<div class="inner">
+					<h1>Who is this fellow!</h1>
+					<div class="desc">
+						<h1><a rel="me" href="https://profiles.google.com/115310382888220784299" target="_blank">Raju K <img height="32" width="32" src="img/gplus.png" alt="profile"/></a></h1>
+						<span class="cnt">Development Engineer at <span class="str"><a href="http://www.antkorp.in/">antkorp</a></span></span>
+					</div>
+				</div>
+			</section>
+			<section class="slide50 slide tslide">
+				<div class="inner">
+					<h1>Thank you</h1>
+					</div>			
+			</section>
+			
+		</div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
+		</script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			/*  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			 (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			 g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			 s.parentNode.insertBefore(g,s)}(document,'script'));*/
+		</script>
+	</body>
+</html>

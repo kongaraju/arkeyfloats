@@ -1,0 +1,763 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	position: relative;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: #555;
+	overflow: hidden;
+}
+
+.slide {
+	display: none;
+	background-color: #eee;
+}
+
+.container .slide:first-child {
+	display: block;
+}
+
+.inner {
+	/*position:absolute;*/
+	display: block;
+
+}
+
+.container .slide:first-child .inner {
+	position: absolute;
+	text-align: center;
+}
+
+.container .slide:nth-child(49) .inner {
+	text-align: center;
+}
+
+.container .slide:nth-child(49) .inner .desc {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.container .slide:last-child {
+	text-align: center;
+	background-color: #12A6EB;
+	color: #FFFFFF;
+}
+
+
+.container .slide {
+
+	position: absolute;
+	top: 5%;
+	bottom: 5%;
+	left: 10%;
+	right: 10%;
+	background: #ffffff;
+	border-radius: 3px;
+	padding: 20px;
+
+
+	width: auto;
+	height: auto;
+
+	-webkit-transition: all 5.0s ease-in-out;
+	-moz-transition: all 1.0s ease-in-out;
+	-o-transition: all 1.0s ease-in-out;
+	transition: all 1.0s ease-in-out;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
+
+}
+
+
+.container .slide.tslide .inner {
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	left: 20%;
+}
+
+.container .tslide:nth-child(3) {
+	background-color: #00bf32;
+
+}
+
+.container .tslide:nth-child(14) {
+	background-color: #ff4900;
+}
+
+.container .tslide:nth-child(20) {
+	background-color: #5a0dac;
+}
+
+.container .tslide:nth-child(27) {
+	background-color: #d8005f;
+}
+
+.container .tslide:nth-child(36) {
+	background-color: #ffbb00;
+}
+
+.container .tslide:nth-child(43) {
+	background-color: #aa00a2;
+}
+
+.inner h1 {
+	font-size: 40px;
+	color: #12a6eb;
+	text-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
+	margin: 0px 0px 15px 0px;
+
+}
+
+.tslide .inner h1 {
+	color: #FFFFFF;
+}
+
+.inner h2 {
+	font-size: 25px;
+	color: #777;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+	margin: 0px 0px 15px 0px;
+}
+
+.inner ul {
+	font-size: 30px;
+	color: #00cc00;
+	text-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+}
+
+.inner a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.desc {
+	margin-top: 10px;
+	font-size: 20px;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, .2);
+	padding: 10px;
+}
+
+.desc ul {
+	color: #555555;
+	font-size: 23px;
+
+}
+
+.desc ul li {
+	padding: 3px 0px;
+}
+
+.further {
+	margin-top: 10px;
+}
+
+.code {
+	padding: 5px;
+	background-color: #ddd;
+	font-size: 16px;
+	margin: 10px 0px 0 0px;
+	padding-left: 25px;
+	border-radius: 5px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .1)
+}
+
+.str {
+	color: green;
+}
+
+.tag {
+	color: blue;
+}
+
+.atr {
+	color: red;
+}
+
+.cnt {
+	color: #555;
+}
+
+
+.demobtn,
+.sourcebtn {
+	padding: 5px;
+	background-color: red;
+	border-radius: 2px;
+	height: 35px;
+	line-height: 30px;
+	margin: 5px;
+	color: #fff;
+}
+
+a.demobtn,
+a.sourcebtn {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	/* Styles */
+
+	.container .slide {
+		top: 1%;
+		bottom: 1%;
+		left: 3%;
+		right: 3%;
+		padding: 5px;
+	}
+
+	.inner h1 {
+		font-size: 15px;
+	}
+
+	.inner ul {
+		font-size: 10px;
+	}
+
+	.desc ul {
+		font-size: 13px;
+	}
+
+	.desc ul li {
+		padding: 1px 0px;
+	}
+
+	.further {
+		margin-top: 5px;
+	}
+
+	.code {
+		padding: 3px;
+		font-size: 12px;
+		margin: 5px 0px 0 0px;
+		padding-left: 15px;
+	}
+
+	.demobtn,
+	.sourcebtn {
+		padding: 3px;
+		height: 25px;
+		line-height: 25px;
+		margin: 2px;
+	}
+
+
+
+}
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+	/* Styles */
+	.container .slide {
+		top: 5%;
+		bottom: 5%;
+		left: 10%;
+		right: 10%;
+		padding: 15px;
+	}
+
+	.inner h1 {
+		font-size: 35px;
+	}
+
+	.inner ul {
+		font-size: 28px;
+	}
+
+	.desc ul {
+		font-size: 20px;
+	}
+
+	.desc ul li {
+		padding: 3px 0px;
+	}
+
+	.further {
+		margin-top: 10px;
+	}
+
+	.code {
+		padding: 5px;
+		font-size: 16px;
+		margin: 5px 0px 0 0px;
+		padding-left: 20px;
+	}
+
+	.demobtn,
+	.sourcebtn {
+		padding: 5px;
+		height: 30px;
+		line-height: 30px;
+		margin: 5px;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+	/* Styles */
+	.container .slide {
+		top: 5%;
+		bottom: 5%;
+		left: 10%;
+		right: 10%;
+		padding: 15px;
+	}
+
+	.inner h1 {
+		font-size: 35px;
+	}
+
+	.inner ul {
+		font-size: 28px;
+	}
+
+	.desc ul {
+		font-size: 20px;
+	}
+
+	.desc ul li {
+		padding: 3px 0px;
+	}
+
+	.further {
+		margin-top: 10px;
+	}
+
+	.code {
+		padding: 5px;
+		font-size: 16px;
+		margin: 5px 0px 0 0px;
+		padding-left: 20px;
+	}
+
+	.demobtn,
+	.sourcebtn {
+		padding: 5px;
+		height: 30px;
+		line-height: 30px;
+		margin: 5px;
+	}
+
+
+}
+
+@media only screen and (min-width : 640px) and (max-width : 1024px) {
+
+	/* Styles */
+	.container .slide {
+		top: 2%;
+		bottom: 2%;
+		left: 5%;
+		right: 5%;
+		padding: 15px;
+	}
+
+	.inner h1 {
+		font-size: 35px;
+	}
+
+	.inner ul {
+		font-size: 28px;
+	}
+
+	.desc ul {
+		font-size: 20px;
+	}
+
+	.desc ul li {
+		padding: 3px 0px;
+	}
+
+	.further {
+		margin-top: 10px;
+	}
+
+	.code {
+		padding: 5px;
+		font-size: 16px;
+		margin: 5px 0px 0 0px;
+		padding-left: 20px;
+	}
+
+	.demobtn,
+	.sourcebtn {
+		padding: 5px;
+		height: 30px;
+		line-height: 30px;
+		margin: 5px;
+	}
+
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+	/* Styles */
+	.container .slide {
+		top: 5%;
+		bottom: 5%;
+		left: 10%;
+		right: 10%;
+		padding: 15px;
+	}
+
+	.inner h1 {
+		font-size: 35px;
+	}
+
+	.inner ul {
+		font-size: 28px;
+	}
+
+	.desc ul {
+		font-size: 20px;
+	}
+
+	.desc ul li {
+		padding: 3px 0px;
+	}
+
+	.further {
+		margin-top: 10px;
+	}
+
+	.code {
+		padding: 5px;
+		font-size: 16px;
+		margin: 5px 0px 0 0px;
+		padding-left: 20px;
+	}
+
+	.demobtn,
+	.sourcebtn {
+		padding: 5px;
+		height: 30px;
+		line-height: 30px;
+		margin: 5px;
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+	/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+	/* Styles */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		/* Black prints faster: h5bp.com/s */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " ("attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " ("attr(title) ")";
+	}
+
+	/*
+     * Don't show links for images, or javascript/internal links
+     */
+
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display: table-header-group;
+		/* h5bp.com/t */
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	@page {
+		margin: 0.5cm;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
